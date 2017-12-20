@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Message</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<script src="https://use.fontawesome.com/8aee6067b0.js"></script>
+	<style>
+		h2:first-child {margin:80px 0;}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2><a href="{% url 'home_view' %}">Home</a></h2>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12">
+				<h1>Message from {{ message.name }}:</h1>
+				<hr>
+				<h3>Name: {{ message.name }}</h3>
+				<h4>Email: {{ message.email }}</h4>
+				<p>{{ message.message }}</p>
+			</div>
+		</div>
+	</div>
+</body>

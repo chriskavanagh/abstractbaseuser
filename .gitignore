@@ -1,0 +1,14 @@
+*.pyc
+local_settings.py
+*.sqlite3
+__pycache__
+sushi
+.env
+env
+*.codekit
+*.sass-cache
+*.DS_STORE
+.deploy
+.sass-cache
+node_modules
+bower_components
